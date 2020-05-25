@@ -263,3 +263,79 @@ textarea {
   }
 }
 
+/* ==========================================================================
+   Fonts of develop.
+   ========================================================================== */
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+/* ==========================================================================
+   Styles of develop.
+   ========================================================================== */
+
+/*
+   * Main styles
+   */
+
+.app_main_box {
+  font-family: Montserrat;
+  overflow-x: hidden;
+  outline: none;
+  max-width: 1328px;
+  margin: 0 auto;
+}
+
+/*
+   * Header styles
+   */
+
+.app_nav_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 77px;
+  overflow: hidden;
+}
+
+.app_nav_logos {
+  margin-right: 30px;
+}
+
+.app_nav_list {
+  margin-right: 45px;
+}
+
+.app_nav_list > ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.app_nav_item {
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.app_nav_item:last-child {
+  margin-right: 0;
+}
+
+.app_nav_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gilroy-Bold;
+  min-width: 254px;
+  height: 48px;
+  background: #951A1D;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
