@@ -284,8 +284,13 @@ textarea {
   font-family: Montserrat;
   overflow-x: hidden;
   outline: none;
-  max-width: 1328px;
-  margin: 0 auto;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*
@@ -328,7 +333,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Gilroy-Bold;
   min-width: 254px;
   height: 48px;
   background: #951A1D;
@@ -337,5 +341,95 @@ textarea {
   cursor: pointer;
 }
 
+.app_nav_button > a {
+  font-family: Gilroy-Bold;
+}
+
+/*
+   * Header section styles
+   */
+
+.app_section_header {
+  min-height: 815px;
+  background-image: url("../img/header/header_section_image.png");
+  background-size: cover;
+}
+
+.app_section_header_content {
+  min-height: inherit;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.app_section_header_content_rows_box {
+  max-width: 1328px;
+  margin: 0 auto;
+}
+
+.app_section_header_content_rows {
+  display: flex;
+  padding-top: 80px;
+}
+
+.app_section_header_content_row_1,
+.app_section_header_content_row_2 {
+  flex-basis: 50%;
+}
+
+.app_section_header_content_row_1 {
+  margin-bottom: 60px;
+}
+
+.app_section_header_content_row_1 > h1 {
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.app_section_header_content_row_1 article {
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  padding-right: 50px;
+}
+
+.app_section_header_content_row_1 article:first-of-type {
+  margin-top: 10px;
+}
+
+.app_section_header_content_row_2 > ul {
+  list-style-image: url("../img/header/line.png");
+  height: 100%;
+  margin: 0;
+  padding-left: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.app_section_header_content_row_2 li {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.app_section_header_content_button {
+  background: #C2A764;
+  width: 334px;
+  height: 63px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app_section_header_content_button > a {
+  font-family: Gilroy-Bold;
+  font-weight: bold;
+  font-size: 18px;
+}
 
 
