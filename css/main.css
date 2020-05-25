@@ -280,6 +280,13 @@ textarea {
    * Main styles
    */
 
+:root {
+  --color_gold: #C2A764;
+  --color_red: #951A1D;
+  --color_grey: #AFAFAF;
+  --section_width: 1328px;
+}
+
 .app_main_box {
   font-family: Montserrat;
   overflow-x: hidden;
@@ -346,7 +353,7 @@ h2 {
   align-items: center;
   min-width: 254px;
   height: 48px;
-  background: #951A1D;
+  background: var(--color_red);
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -374,7 +381,7 @@ h2 {
 
 .app_section_header_content_rows_box,
 .app_section_selections {
-  max-width: 1328px;
+  max-width: var(--section_width);
   margin: 0 auto;
 }
 
@@ -429,7 +436,7 @@ h2 {
 }
 
 .app_section_header_content_button {
-  background: #C2A764;
+  background: var(--color_gold);
   width: 334px;
   height: 63px;
   cursor: pointer;
@@ -501,7 +508,7 @@ h2 {
   font-size: 32px;
   line-height: 36px;
   color: #fff;
-  border-bottom: 10px solid #C2A764;
+  border-bottom: 10px solid var(--color_gold);
   text-align: center;
 }
 
@@ -520,7 +527,7 @@ h2 {
 .app_section_selections_content_button {
   width: 376px;
   height: 63px;
-  background: #951A1D;
+  background: var(--color_red);
   cursor: pointer;
 
   display: flex;
