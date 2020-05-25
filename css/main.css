@@ -298,6 +298,12 @@ h2 {
   margin: 0;
 }
 
+.app_section_navigation_box,
+.app_section_header_content,
+.app_section_selections_content {
+  padding: 0 15px;
+}
+
 /*
    * Header styles
    */
@@ -363,6 +369,7 @@ h2 {
 .app_section_header_content {
   min-height: inherit;
   background: rgba(0, 0, 0, 0.5);
+  padding: 0 15px;
 }
 
 .app_section_header_content_rows_box,
@@ -443,8 +450,6 @@ h2 {
 
 .app_section_selections_content {
   padding-top: 100px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .app_section_selections_content_items {
