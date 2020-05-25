@@ -371,6 +371,7 @@ h2 {
   min-height: 815px;
   background-image: url("../img/header/header_section_image.png");
   background-size: cover;
+  background-position: 50%;
 }
 
 .app_section_header_content {
@@ -416,11 +417,16 @@ h2 {
   margin-top: 10px;
 }
 
+.app_section_header_content_row_2 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
 .app_section_header_content_row_2 > ul {
   list-style-image: url("../img/header/line.png");
   height: 100%;
   margin: 0;
-  padding-left: 60px;
+  padding-left: 90px;
 
   display: flex;
   flex-direction: column;
@@ -436,7 +442,7 @@ h2 {
 }
 
 .app_section_header_content_rows_footer {
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 .app_section_header_content_button {
