@@ -435,6 +435,10 @@ h2 {
   padding-left: 30px;
 }
 
+.app_section_header_content_rows_footer {
+  padding-bottom: 80px;
+}
+
 .app_section_header_content_button {
   background: var(--color_gold);
   width: 334px;
