@@ -315,12 +315,14 @@ h2 {
    * Header styles
    */
 
-.app_nav_box {
+.app_section_navigation_box {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 77px;
   overflow: hidden;
+
+  padding: 0 15px;
 }
 
 .app_nav_logos {
