@@ -818,7 +818,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0;
+  padding: 20px 0 60px;
 }
 
 .app_section_teachers_grid_item {
@@ -848,6 +848,84 @@ h2 {
 .app_section_teachers_grid_item_name > span {
   display: inline-block;
   margin-top: 5px;
+}
+
+/*
+   * License section styles
+   */
+
+.app_section_license_content {
+  padding: 110px 0 140px;
+}
+
+.app_section_license_content_rows {
+  display: flex;
+  margin-top: 80px;
+}
+
+.app_section_license_content_rows_row_1 {
+  flex-basis: 60%;
+}
+
+.app_section_license_content_rows_row_2 {
+  flex-basis: 40%;
+}
+
+.app_section_license_content_rows_row_1_accordion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.app_section_license_content_rows_row_1_accordion_item {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.app_section_license_content_rows_row_1_accordion_item:before {
+  position: absolute;
+  content: '';
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 70%;
+  bottom: 0;
+}
+
+.app_section_license_content_rows_row_1_accordion_item:first-child {
+  margin-top: 0;
+}
+
+.app_section_license_content_rows_row_1_accordion_item_head {
+  display: flex;
+  align-items: center;
+}
+
+.app_section_license_content_rows_row_1_accordion_item_head_circle {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  background-color: #AFAFAF;
+
+  font-weight: 600;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.app_section_license_content_rows_row_1_accordion_item_head_title {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.app_section_license_content_rows_row_1_accordion_item_head_toggle > img {
+  transform: rotate(90deg);
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 
