@@ -697,11 +697,11 @@ h2 {
 }
 
 .app_section_course_content_slider_box {
-  margin-top: 110px;
+  margin: 110px 0;
 }
 
 .app_section_course_content_slider {
-  margin: 70px 0 110px;
+  margin-top: 70px;
 }
 
 .app_section_course_content_slider_nav_item {
@@ -799,6 +799,55 @@ h2 {
 
   font-weight: 600;
   outline: none;
+}
+
+/*
+   * Teachers section styles
+   */
+
+.app_section_teachers {
+  background-color: #eee;
+  min-height: 849px
+}
+
+.app_section_teachers_content {
+  padding-top: 50px;
+}
+
+.app_section_teachers_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.app_section_teachers_grid_item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+.app_section_teachers_grid_item_photo {
+  width: 100%;
+  height: 220px;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.app_section_teachers_grid_item_name > h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 26px 0 0;
+}
+
+.app_section_teachers_grid_item_name > span {
+  display: inline-block;
+  margin-top: 5px;
 }
 
 
