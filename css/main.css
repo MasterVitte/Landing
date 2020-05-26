@@ -368,7 +368,6 @@ h2 {
    */
 
 .app_section_header {
-  min-height: 815px;
   background-image: url("../img/header/header_section_image.png");
   background-size: cover;
   background-position: 50%;
@@ -555,7 +554,6 @@ h2 {
 
 .app_section_programs {
   margin-top: 110px;
-  min-height: 550px;
   background: var(--color_red);
 }
 
@@ -570,6 +568,7 @@ h2 {
 .app_section_programs_content_slider {
   width: 100%;
   margin-top: 50px;
+  padding-bottom: 80px;
 }
 
 .app_section_programs_content_slider_item_rows {
@@ -657,21 +656,19 @@ h2 {
 .programs_slider_next_arrow {
   width: 44px;
   height: 44px;
+  top: calc(50% - 84px);
+  position: absolute;
   cursor: pointer;
   z-index: 10;
 }
 
 .programs_slider_prev_arrow {
   background-image: url("../img/programs/arrow.png");
-  position: absolute;
-  top: calc(50% - 44px);
 }
 
 .programs_slider_next_arrow {
   background-image: url("../img/programs/arrow.png");
   transform: rotate(180deg);
-  position: absolute;
-  top: calc(50% - 44px);
   right: 0;
 }
 
