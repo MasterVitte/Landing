@@ -360,9 +360,6 @@ h2 {
   color: #fff;
   text-align: center;
   cursor: pointer;
-}
-
-.app_nav_button > a {
   font-family: Gilroy-Bold;
 }
 
@@ -458,9 +455,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.app_section_header_content_button > a {
   font-family: Gilroy-Bold;
   font-weight: bold;
   font-size: 18px;
@@ -547,9 +542,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.app_section_selections_content_button > a {
   font-family: Gilroy-Bold;
   font-weight: bold;
   font-size: 18px;
