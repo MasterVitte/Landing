@@ -928,4 +928,21 @@ h2 {
   cursor: pointer;
 }
 
+.app_section_license_content_rows_row_1_accordion_item_content {
+  margin-top: 15px;
+  margin-left: 70px;
+  overflow-y: hidden;
+  height: 0;
+}
+
+.accordion_toggle {
+  transform: rotate(270deg) !important;
+  transform-origin: 50%;
+}
+
+.accordion_toggle_content {
+  height: auto;
+  transition: .6s;
+}
+
 
