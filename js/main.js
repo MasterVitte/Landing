@@ -4,8 +4,8 @@ $(document).ready(function() {
   $('.app_section_programs_content_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: '<div class="programs_slider_prev_arrow"></div>',
-    nextArrow: '<div class="programs_slider_next_arrow"></div>',
+    prevArrow: '<div class="programs_slider_prev_arrow prev_arrow"></div>',
+    nextArrow: '<div class="programs_slider_next_arrow next_arrow"></div>',
   });
 
   // Слайдер секции программы курса
@@ -27,6 +27,16 @@ $(document).ready(function() {
     $(this).toggleClass('accordion_toggle');
     let id = $(this).parent().data('id');
     $('.app_section_license_content_rows_row_1_accordion_item_content[data-id='+id+']').toggleClass('accordion_toggle_content');
+  });
+
+  $($('.app_section_license_content_rows_row_1_accordion_item_head_toggle')[0]).children().trigger('click');
+
+  // Слайдер секции отзывы
+  $('.app_section_feedback_content_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<div class="feedback_slider_prev_arrow prev_arrow"></div>',
+    nextArrow: '<div class="feedback_slider_next_arrow next_arrow"></div>',
   });
 
 });

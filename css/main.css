@@ -641,8 +641,8 @@ h2 {
   font-weight: 600;
 }
 
-.programs_slider_prev_arrow,
-.programs_slider_next_arrow {
+.prev_arrow,
+.next_arrow {
   width: 44px;
   height: 44px;
   top: calc(50% - 44px);
@@ -651,11 +651,11 @@ h2 {
   z-index: 10;
 }
 
-.programs_slider_prev_arrow {
+.prev_arrow {
   background-image: url("../img/programs/arrow.png");
 }
 
-.programs_slider_next_arrow {
+.next_arrow {
   background-image: url("../img/programs/arrow.png");
   transform: rotate(180deg);
   right: 0;
@@ -855,7 +855,7 @@ h2 {
    */
 
 .app_section_license_content {
-  padding: 110px 0 140px;
+  padding: 110px 0 340px;
 }
 
 .app_section_license_content_rows {
@@ -945,4 +945,129 @@ h2 {
   transition: .6s;
 }
 
+/*
+   * License call styles
+   */
+
+.app_section_call {
+  width: 100%;
+  height: 413px;
+  background-image: url('../img/call/call.png');
+  background-size: cover;
+  background-position: 50%;
+}
+
+.app_section_call_content_box {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.app_section_call_content {
+  height: 100%;
+}
+
+.app_section_call_content_rows {
+  padding-top: 60px;
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.app_section_call_content_rows_row_1 {
+  width: 60%;
+}
+
+.app_section_call_content_rows_row_1 > h1 {
+  font-weight: 800;
+  color: #fff;
+  font-size: 30px;
+}
+
+.app_section_call_content_rows_row_1 > p {
+  font-weight: 300;
+  color: #fff;
+  width: 65%;
+}
+
+.app_section_call_content_rows_row_1_footer {
+  margin-top: 30px;
+}
+
+.app_section_call_content_rows_row_1_footer > form {
+  display: flex;
+  width: 100%;
+}
+
+.app_section_call_content_rows_row_1_footer_mobile {
+  width: 300px;
+  height: 63px;
+  font-weight: 600;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+app_section_call_content_rows_row_1_footer_mobile::placeholder {
+  font-weight: 600;
+  color: #000;
+}
+
+.app_section_call_content_rows_row_1_footer_submit {
+  background-color: var(--color_gold);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 63px;
+  margin-left: 30px;
+  color: #fff;
+  -webkit-appearance: none;
+  border: none;
+}
+
+.app_section_call_content_rows_row_2 {
+  width: 40%;
+}
+
+.app_section_call_content_rows_row_2 > img {
+  margin-top: -200px;
+}
+
+/*
+   * License feedback styles
+   */
+
+.app_section_feedback {
+  padding-top: 140px;
+}
+
+.app_section_feedback_content_slider {
+  box-shadow: 0 16px 48px rgba(17, 45, 71, 0.34);
+}
+
+.app_section_feedback_content_slider_item {
+  padding: 40px 300px 70px;
+  box-sizing: border-box;
+}
+
+.app_section_feedback_content_slider_item_head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.app_section_feedback_content_slider_item_head > h6 {
+  margin: 0;
+  margin-top: 10px;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.app_section_feedback_content_slider_item_content {
+  text-align: center;
+  margin-top: 10px;
+}
 
