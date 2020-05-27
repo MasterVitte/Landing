@@ -280,6 +280,10 @@ textarea {
    * Main styles
    */
 
+* {
+  outline: none !important;
+}
+
 :root {
   --color_gold: #C2A764;
   --color_red: #951A1D;
@@ -290,7 +294,6 @@ textarea {
 .app_main_box {
   font-family: Montserrat;
   overflow-x: hidden;
-  outline: none;
 }
 
 a,
@@ -641,11 +644,15 @@ h2 {
   font-weight: 600;
 }
 
+.programs_slider_prev_arrow,
+.programs_slider_next_arrow {
+  top: calc(50% - 44px);
+}
+
 .prev_arrow,
 .next_arrow {
   width: 44px;
   height: 44px;
-  top: calc(50% - 44px);
   position: absolute;
   cursor: pointer;
   z-index: 10;
@@ -662,7 +669,7 @@ h2 {
 }
 
 /*
-   * Programs course styles
+   * Course section styles
    */
 
 .app_section_course_content_list {
@@ -946,7 +953,7 @@ h2 {
 }
 
 /*
-   * License call styles
+   * Call section styles
    */
 
 .app_section_call {
@@ -1035,7 +1042,7 @@ app_section_call_content_rows_row_1_footer_mobile::placeholder {
 }
 
 /*
-   * License feedback styles
+   * Feedback section styles
    */
 
 .app_section_feedback {
@@ -1069,5 +1076,191 @@ app_section_call_content_rows_row_1_footer_mobile::placeholder {
 .app_section_feedback_content_slider_item_content {
   text-align: center;
   margin-top: 10px;
+  line-height: 30px;
 }
 
+.feedback_slider_prev_arrow,
+.feedback_slider_next_arrow {
+  top: calc(50% - 22px);
+}
+
+.feedback_slider_prev_arrow {
+  left: -114px;
+}
+
+.feedback_slider_next_arrow {
+  right: -114px;
+}
+
+/*
+   * Buy section styles
+   */
+
+.app_section_buy {
+  padding: 110px 0;
+}
+
+.app_section_buy_content > h1 {
+  text-align: center;
+}
+
+.app_section_buy_content_rows {
+  margin-top: 60px;
+  display: flex;
+  height: 667px;
+}
+
+.app_section_buy_content_rows_left_half {
+  flex-basis: 40%;
+  background-color: var(--color_red);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 0 80px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app_section_buy_content_rows_right_half {
+  flex-basis: 60%;
+  margin-left: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.app_section_buy_content_rows_left_half_one {
+  display: flex;
+  align-items: center;
+}
+
+.app_section_buy_content_rows_left_half_one span:first-of-type {
+  font-weight: 600;
+  font-size: 68px;
+  color: #fff;
+}
+
+.app_section_buy_content_rows_left_half_one span:nth-child(2) {
+  font-weight: 600;
+  font-size: 22px;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.app_section_buy_content_rows_left_half_two {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.app_section_buy_content_rows_left_half_three {
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.app_section_buy_content_rows_left_half_four {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.app_section_buy_content_rows_left_half_four span:first-of-type {
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+}
+
+.app_section_buy_content_rows_left_half_four span:nth-child(2) {
+  font-weight: 300;
+  color: #fff;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.app_section_buy_content_rows_left_half_four span:nth-child(3) {
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.app_section_buy_content_rows_left_half_four span:nth-child(4) {
+  font-weight: 300;
+  font-size: 22px;
+  text-decoration: line-through;
+  color: #fff;
+}
+
+.app_section_buy_content_rows_right_half {
+  text-align: center;
+  padding: 70px 90px;
+  box-sizing: border-box;
+}
+
+.app_section_buy_content_rows_right_half form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 426px;
+}
+
+.app_section_buy_content_rows_right_half > p,
+.app_section_buy_content_rows_right_half > h3 {
+  margin-top: 20px;
+}
+
+.app_section_buy_content_rows_right_half_form_box {
+  display: flex;
+  justify-content: center;
+}
+
+.app_section_buy_content_rows_right_half input:not([type="submit"]) {
+  -webkit-appearance: none;
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.app_section_buy_content_rows_right_half input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.app_section_buy_content_rows_right_half input:focus {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.app_section_buy_content_rows_right_half_input_submit {
+  background-color: var(--color_red);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  width: 100%;
+  height: 63px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.app_section_buy_content_rows_right_half_input_submit:focus,
+.app_section_buy_content_rows_right_half_input_submit:active,
+.app_section_buy_content_rows_right_half_input_submit:hover,
+.app_section_buy_content_rows_right_half_input_submit:visited {
+  color: #fff;
+}
+
+.app_section_buy_content_rows_right_half form span {
+  font-size: 9px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 300;
+}
