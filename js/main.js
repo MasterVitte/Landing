@@ -68,14 +68,15 @@ $(document).ready(function() {
   // Плавная прокрутка до секции
   $('.link').click(function() { // тут пишите условия, для всех ссылок или для конкретных
 
-    var firstLink = false;
+    var headerOffset = 0;
 
-    if ( $(this).attr("href") === '#about' ) {
-      firstLink = true;
+    // Фикс якоря с учетом высоты хедера
+    if ( $(this).attr("href") === '#about' || $(this).parent().hasClass('footer_link') ) {
+      headerOffset = 77;
     }
 
     $("html, body").animate({
-      scrollTop: firstLink ? 0 : $( $(this).attr("href") ).offset().top + "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+      scrollTop: $( $(this).attr("href") ).offset().top - headerOffset + "px" // .top+margin - ставьте минус, если хотите увеличить отступ
     }, {
       duration: 1000, // тут можно контролировать скорость
       easing: "swing"
