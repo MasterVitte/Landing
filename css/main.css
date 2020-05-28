@@ -318,12 +318,29 @@ h2 {
    * Header styles
    */
 
+.app_section_navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 77px;
+  overflow: hidden;
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 10000;
+}
+
+.app_section_navigation_fixed {
+  position: fixed;
+}
+
 .app_section_navigation_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 77px;
-  overflow: hidden;
+  width: 100%;
 }
 
 .app_nav_logos {
@@ -338,6 +355,10 @@ h2 {
   list-style-type: none;
   display: flex;
   padding: 0;
+}
+
+.app_nav_list > ul li a {
+  color: #000;
 }
 
 .app_nav_item {
@@ -371,6 +392,7 @@ h2 {
   background-image: url("../img/header/header_section_image.png");
   background-size: cover;
   background-position: 50%;
+  margin-top: 77px;
 }
 
 .app_section_header_content_box {
@@ -673,7 +695,7 @@ h2 {
    */
 
 .app_section_course_content_list {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .app_section_course_content_list > ul {
