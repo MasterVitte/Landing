@@ -405,7 +405,8 @@ h2 {
 }
 
 .footer_list_links > ul li a:hover,
-.app_nav_list > ul li a:hover {
+.app_nav_list > ul li a:hover,
+.footer_social_icon_box a:hover {
   opacity: .7;
   transition: .4s;
 }
@@ -1426,6 +1427,18 @@ app_section_call_content_rows_row_1_footer_mobile::placeholder {
 
 .footer_social_icon_box {
   margin-top: 15px;
+}
+
+.footer_social_icon_box a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: .4s;
+}
+
+.footer_social_icon_box img {
+  width: inherit;
+  height: inherit;
 }
 
 .footer_list_links > ul {
