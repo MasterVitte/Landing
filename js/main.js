@@ -86,7 +86,7 @@ $(document).ready(function() {
   });
 
   // Слайдер секции программы
-  $('.app_section_programs_content_slider').slick({
+  $('.app_section_programs_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '<div class="programs_slider_prev_arrow prev_arrow"></div>',
@@ -94,26 +94,26 @@ $(document).ready(function() {
   });
 
   // Слайдер секции программы курса
-  $('.app_section_course_content_slider_for').slick({
+  $('.app_section_courses_slider_for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: '.app_section_course_content_slider_nav'
+    asNavFor: '.app_section_courses_slider_nav'
   });
 
-  $('.app_section_course_content_slider_nav').slick({
+  $('.app_section_courses_slider_nav').slick({
     slidesToShow: 9,
     slidesToScroll: 1,
-    asNavFor: '.app_section_course_content_slider_for',
+    asNavFor: '.app_section_courses_slider_for',
     focusOnSelect: true
   });
 
   // Аккордеон
-  $('.app_section_license_content_rows_row_1_accordion_item_head').on('click', function() {
+  $('.app_section_license_accordion_item_head').on('click', function() {
 
     var id = $(this).data('id');
 
     // Сброс открытых вкладок
-    $('.app_section_license_content_rows_row_1_accordion_item_head').each(function() {
+    $('.app_section_license_accordion_item_head').each(function() {
 
       let Eachid = $(this).data('id');
 
@@ -121,15 +121,15 @@ $(document).ready(function() {
       if (Eachid !== id) {
 
         $(this)
-          .children('.app_section_license_content_rows_row_1_accordion_item_head_toggle')
+          .children('.app_section_license_accordion_item_toggle')
           .children('img')
           .removeClass('accordion_toggle');
 
         $(this)
-          .children('.app_section_license_content_rows_row_1_accordion_item_head_circle')
+          .children('.app_section_license_accordion_item_circle')
           .removeClass('accordion_circle_active');
 
-        $('.app_section_license_content_rows_row_1_accordion_item_content[data-id='+Eachid+']')
+        $('.app_section_license_accordion_item_content[data-id='+Eachid+']')
           .removeClass('accordion_toggle_content');
 
       }
@@ -137,28 +137,72 @@ $(document).ready(function() {
     });
 
     // Активация вкладки
-    $(this).children('.app_section_license_content_rows_row_1_accordion_item_head_toggle')
+    $(this).children('.app_section_license_accordion_item_toggle')
       .children('img')
       .toggleClass('accordion_toggle');
 
     $(this)
-      .children('.app_section_license_content_rows_row_1_accordion_item_head_circle')
+      .children('.app_section_license_accordion_item_circle')
       .toggleClass('accordion_circle_active');
 
-    $('.app_section_license_content_rows_row_1_accordion_item_content[data-id='+id+']')
+    $('.app_section_license_accordion_item_content[data-id='+id+']')
       .toggleClass('accordion_toggle_content');
 
   });
 
   // Триггер первой вкладки
-  $($('.app_section_license_content_rows_row_1_accordion_item_head_toggle')[0]).children().trigger('click');
+  $($('.app_section_license_accordion_item')[0]).children().trigger('click');
 
   // Слайдер секции отзывы
-  $('.app_section_feedback_content_slider').slick({
+  $('.app_section_feedback_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '<div class="feedback_slider_prev_arrow prev_arrow"></div>',
     nextArrow: '<div class="feedback_slider_next_arrow next_arrow"></div>',
   });
+
+  // Скрипты модалки
+
+  function showModal(selectorBtn,selectorModal,selectorClose) {
+    const btn = $(selectorBtn), modal =  $(selectorModal), close = $(selectorClose);
+
+    btn.each(function (i, item) {
+
+      $(document).keydown(function(eventObject){
+        if( eventObject.which === 27 ){
+          modal.hide();
+          $('body').removeClass('scroll_hidden');
+        }
+      });
+
+      $(item).on('click',function (event) {
+
+        if(event.target){
+          event.preventDefault();
+        }
+
+        modal.css({"display":"flex"});
+        $('body').addClass('scroll_hidden');
+
+        modal.on('click', function (event) {
+
+          if(event.target === modal[0]){
+            modal.hide();
+            $('body').removeClass('scroll_hidden');
+          }
+
+        });
+
+        close.on('click',function () {
+
+          modal.hide();
+          $('body').removeClass('scroll_hidden');
+
+        });
+      })
+    })
+  }
+
+  showModal('.modal_view', '.app_section_modal_form', '.modal_buy_close');
 
 });
