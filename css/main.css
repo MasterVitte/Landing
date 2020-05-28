@@ -929,17 +929,21 @@ h2 {
   font-size: 22px;
 }
 
+.app_section_license_content_rows_row_1_accordion_item_head {
+  cursor: pointer;
+}
+
 .app_section_license_content_rows_row_1_accordion_item_head_toggle > img {
   transform: rotate(90deg);
   margin-left: 20px;
-  cursor: pointer;
 }
 
 .app_section_license_content_rows_row_1_accordion_item_content {
   margin-top: 15px;
   margin-left: 70px;
   overflow-y: hidden;
-  height: 0;
+  max-height: 0;
+  transition: max-height 0.5s linear;
 }
 
 .accordion_toggle {
@@ -948,8 +952,8 @@ h2 {
 }
 
 .accordion_toggle_content {
-  height: auto;
-  transition: .6s;
+  max-height: 500px;
+  transition: max-height 0.5s linear;
 }
 
 /*

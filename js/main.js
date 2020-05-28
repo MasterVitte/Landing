@@ -23,9 +23,10 @@ $(document).ready(function() {
   });
 
   // Аккордион
-  $('.app_section_license_content_rows_row_1_accordion_item_head_toggle > img').on('click', function() {
-    $(this).toggleClass('accordion_toggle');
-    let id = $(this).parent().data('id');
+  $('.app_section_license_content_rows_row_1_accordion_item_head').on('click', function() {
+    let id = $(this).data('id');
+    console.log(id);
+    $(this).children('.app_section_license_content_rows_row_1_accordion_item_head_toggle').children('img').toggleClass('accordion_toggle');
     $('.app_section_license_content_rows_row_1_accordion_item_content[data-id='+id+']').toggleClass('accordion_toggle_content');
   });
 
