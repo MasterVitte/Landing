@@ -296,6 +296,10 @@ textarea {
   overflow-x: hidden;
 }
 
+.app_main_box img {
+  pointer-events: none;
+}
+
 a,
 a:visited,
 a:hover {
@@ -359,6 +363,7 @@ h2 {
 
 .app_nav_list > ul li a {
   color: #000;
+  transition: .4s;
 }
 
 .app_nav_item {
@@ -382,6 +387,27 @@ h2 {
   text-align: center;
   cursor: pointer;
   font-family: Gilroy-Bold;
+  transition: .4s;
+}
+
+.app_nav_button:hover,
+.app_section_header_content_button:hover,
+.app_section_selections_content_button:hover,
+.app_section_programs_content_slider_item_info_button:hover,
+.prev_arrow:hover,
+.next_arrow:hover,
+.app_section_course_content_for_slider_row_2_rows_button:hover,
+.app_section_call_content_rows_row_1_footer_submit:hover,
+.app_section_buy_content_rows_right_half_input_submit:hover,
+.app_section_footer_content_rows_row_1_footer_rows span:hover {
+  filter: brightness(110%);
+  transition: .4s;
+}
+
+.footer_list_links > ul li a:hover,
+.app_nav_list > ul li a:hover {
+  opacity: .7;
+  transition: .4s;
 }
 
 /*
@@ -470,6 +496,7 @@ h2 {
   font-family: Gilroy-Bold;
   font-weight: bold;
   font-size: 18px;
+  transition: .4s;
 }
 
 /*
@@ -558,6 +585,7 @@ h2 {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
+  transition: .4s;
 }
 
 /*
@@ -664,6 +692,7 @@ h2 {
   background-color: var(--color_gold);
   color: #fff;
   font-weight: 600;
+  transition: .4s;
 }
 
 .programs_slider_prev_arrow,
@@ -678,6 +707,7 @@ h2 {
   position: absolute;
   cursor: pointer;
   z-index: 10;
+  transition: .4s;
 }
 
 .prev_arrow {
@@ -747,9 +777,15 @@ h2 {
   background: rgba(194, 167, 100, 0.3);
   outline: none;
   cursor: pointer;
+  transition: .4s;
 
   font-weight: 600;
   font-size: 24px;
+}
+
+.app_section_course_content_slider_nav_item:hover {
+  background: var(--color_gold) !important;
+  transition: .4s;
 }
 
 .app_section_course_content_slider_nav_item:last-child {
@@ -758,6 +794,7 @@ h2 {
 
 .app_section_course_content_slider_nav .slick-current {
   background: var(--color_gold) !important;
+  transition: .4s;
 }
 
 .app_section_course_content_slider_for_rows {
@@ -828,6 +865,7 @@ h2 {
 
   font-weight: 600;
   outline: none;
+  transition: .4s;
 }
 
 /*
@@ -927,6 +965,7 @@ h2 {
 .app_section_license_content_rows_row_1_accordion_item_head {
   display: flex;
   align-items: center;
+  user-select: none;
 }
 
 .app_section_license_content_rows_row_1_accordion_item_head_circle {
@@ -943,6 +982,12 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   border-radius: 50%;
+  transition: .4s;
+}
+
+.accordion_circle_active {
+  background-color: #000;
+  transition: .4s;
 }
 
 .app_section_license_content_rows_row_1_accordion_item_head_title {
@@ -965,7 +1010,7 @@ h2 {
   margin-left: 70px;
   overflow-y: hidden;
   max-height: 0;
-  transition: max-height 0.5s linear;
+  transition: 0.2s;
 }
 
 .accordion_toggle {
@@ -975,7 +1020,7 @@ h2 {
 
 .accordion_toggle_content {
   max-height: 500px;
-  transition: max-height 0.5s linear;
+  transition: 0.4s;
 }
 
 /*
@@ -1058,6 +1103,7 @@ app_section_call_content_rows_row_1_footer_mobile::placeholder {
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
+  transition: .4s;
 }
 
 .app_section_call_content_rows_row_2 {
@@ -1280,13 +1326,14 @@ app_section_call_content_rows_row_1_footer_mobile::placeholder {
   height: 63px;
   margin-top: 40px;
   cursor: pointer;
+  transition: .4s;
 }
 
 .app_section_buy_content_rows_right_half_input_submit:focus,
 .app_section_buy_content_rows_right_half_input_submit:active,
 .app_section_buy_content_rows_right_half_input_submit:hover,
 .app_section_buy_content_rows_right_half_input_submit:visited {
-  color: #fff;
+  color: #fff !important;
 }
 
 .app_section_buy_content_rows_right_half form span {
@@ -1327,7 +1374,7 @@ app_section_call_content_rows_row_1_footer_mobile::placeholder {
   display: inline-block;
   margin-top: 20px;
   color: var(--color_gold);
-
+  transition: .4s;
 }
 
 .app_section_footer_content_rows_row_1,
@@ -1395,6 +1442,7 @@ app_section_call_content_rows_row_1_footer_mobile::placeholder {
 
 .footer_list_links > ul li a {
   color: #000;
+  transition: .4s;
 }
 
 .footer_list_links > ul li:first-of-type {

@@ -106,13 +106,50 @@ $(document).ready(function() {
     focusOnSelect: true
   });
 
-  // Аккордион
+  // Аккордеон
   $('.app_section_license_content_rows_row_1_accordion_item_head').on('click', function() {
-    let id = $(this).data('id');
-    $(this).children('.app_section_license_content_rows_row_1_accordion_item_head_toggle').children('img').toggleClass('accordion_toggle');
-    $('.app_section_license_content_rows_row_1_accordion_item_content[data-id='+id+']').toggleClass('accordion_toggle_content');
+
+    var id = $(this).data('id');
+
+    // Сброс открытых вкладок
+    $('.app_section_license_content_rows_row_1_accordion_item_head').each(function() {
+
+      let Eachid = $(this).data('id');
+
+      // Фикс преждевременного закрытия той вкладки, по которой пользователь кликает, чтобы ее закрыть
+      if (Eachid !== id) {
+
+        $(this)
+          .children('.app_section_license_content_rows_row_1_accordion_item_head_toggle')
+          .children('img')
+          .removeClass('accordion_toggle');
+
+        $(this)
+          .children('.app_section_license_content_rows_row_1_accordion_item_head_circle')
+          .removeClass('accordion_circle_active');
+
+        $('.app_section_license_content_rows_row_1_accordion_item_content[data-id='+Eachid+']')
+          .removeClass('accordion_toggle_content');
+
+      }
+
+    });
+
+    // Активация вкладки
+    $(this).children('.app_section_license_content_rows_row_1_accordion_item_head_toggle')
+      .children('img')
+      .toggleClass('accordion_toggle');
+
+    $(this)
+      .children('.app_section_license_content_rows_row_1_accordion_item_head_circle')
+      .toggleClass('accordion_circle_active');
+
+    $('.app_section_license_content_rows_row_1_accordion_item_content[data-id='+id+']')
+      .toggleClass('accordion_toggle_content');
+
   });
 
+  // Триггер первой вкладки
   $($('.app_section_license_content_rows_row_1_accordion_item_head_toggle')[0]).children().trigger('click');
 
   // Слайдер секции отзывы
