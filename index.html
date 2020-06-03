@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -34,29 +35,46 @@
 
   <!--Section navigation-->
   <header class="app_section_navigation">
-    <nav class="app_section_navigation_box">
-      <!--Navigation logos-->
-      <div class="app_nav_logos">
-        <img src="img/navigation/logo_1.png">
-        <img src="img/navigation/logo_2.png">
-        <img src="img/navigation/logo_3.png">
-      </div>
-      <!--End navigation logos-->
-      <!--Navigation list-->
-      <div class="app_nav_list">
-        <ul>
-          <li class="app_nav_item"><a href="#about" class="link">О нас</a></li>
-          <li class="app_nav_item"><a href="#programs" class="link">Программы</a></li>
-          <li class="app_nav_item"><a href="#courses" class="link">Программа курса</a></li>
-          <li class="app_nav_item"><a href="#teachers" class="link">Преподаватели</a></li>
-          <li class="app_nav_item"><a href="#licenses" class="link">Лицензии и дипломы</a></li>
-        </ul>
-      </div>
-      <!--End navigation list-->
-      <span class="app_nav_button modal_view">
+    <div class="app_section_navigation_box content_mw">
+      <div class="app_section_navigation_content">
+        <!--Navigation logos-->
+        <div class="app_nav_logos">
+          <img src="img/navigation/logo_1.png">
+          <img src="img/navigation/logo_2.png">
+          <img src="img/navigation/logo_3.png">
+        </div>
+        <!--End navigation logos-->
+        <div class="app_nav_links_box">
+          <!--Navigation list-->
+          <div class="app_nav_list">
+            <ul>
+              <li class="app_nav_item"><a href="#about" class="link">О нас</a></li>
+              <li class="app_nav_item"><a href="#programs" class="link">Программы</a></li>
+              <li class="app_nav_item"><a href="#courses" class="link">Программа курса</a></li>
+              <li class="app_nav_item"><a href="#teachers" class="link">Преподаватели</a></li>
+              <li class="app_nav_item"><a href="#licenses" class="link">Лицензии и дипломы</a></li>
+            </ul>
+          </div>
+          <!--End navigation list-->
+          <span class="app_nav_button modal_view">
         Получить консультацию
       </span>
-    </nav>
+        </div>
+        <!--Burger button-->
+        <div class="app_nav_burger_button">
+          <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+          <label for="checkbox1">
+            <div class="hamburger hamburger1">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+        </div>
+        <!--End burger button-->
+      </div>
+    </div>
   </header>
   <!--End section navigation-->
 
@@ -167,109 +185,207 @@
 
   <!--Section programs-->
   <section class="app_section_programs" id="programs">
-    <div class="app_section_programs_content_box content_mw">
-      <div class="app_section_programs_content">
-        <h1>Программы</h1>
-        <!--Section programs slider-->
-        <div class="app_section_programs_slider">
+    <div class="app_section_programs_content_box_bg">
+      <div class="app_section_programs_content_box content_mw">
+        <div class="app_section_programs_content">
+          <h1>Программы</h1>
 
-          <!--Section programs slide-->
-          <div class="app_section_programs_slider_item">
-            <div class="app_section_programs_slider_item_rows">
-              <!--Section programs slide first row-->
-              <div class="app_section_programs_slider_item_row_1">
-                <!--Slide white block content-->
-                <div class="app_section_programs_slider_item_block">
-                  <div class="app_section_programs_slider_item_block_row_1">
-                    <h2>Управление HR</h2>
-                    <p>Mini MBA, 6 месяцев, 520 ак. ч.</p>
+          <!--Section programs slider-->
+          <div class="app_section_programs_slider">
+
+            <!--Section programs slide-->
+            <div class="app_section_programs_slider_item">
+              <div class="app_section_programs_slider_item_rows">
+                <!--Section programs slide first row-->
+                <div class="app_section_programs_slider_item_row_1">
+                  <!--Slide white block content-->
+                  <div class="app_section_programs_slider_item_block">
+                    <div class="app_section_programs_slider_item_block_row_1">
+                      <h2>Управление HR</h2>
+                      <p>Mini MBA, 6 месяцев, 520 ак. ч.</p>
+                    </div>
+                    <div class="app_section_programs_slider_item_block_row_2">
+                      <img src="img/programs/1.png" alt="">
+                    </div>
                   </div>
-                  <div class="app_section_programs_slider_item_block_row_2">
-                    <img src="img/programs/1.png" alt="">
-                  </div>
+                  <!--End slide white block content-->
                 </div>
-                <!--End slide white block content-->
-              </div>
-              <!--End section programs slide first row-->
+                <!--End section programs slide first row-->
 
-              <!--Section programs slide second row-->
-              <div class="app_section_programs_slider_item_row_2">
-                <div class="app_section_programs_slider_item_info">
-                  <p>
-                    Дисциплина знакомит с современными подходами управления человеческими ресурсами.
-                  </p>
-                  <p>
-                    Вы изучите важность
-                    и практики управления человеческими ресурсами в достижении стратегических и оперативных задач
-                    организации, снизите текучку кадров и внедрите все инструменты эффективного взаимодействия HR c
-                    подразделениями компании.
-                  </p>
-                  <p>
-                    Рассмотрите примеры
-                    из практики работы отечественных и иностранных
-                    компаний.
-                  </p>
-                  <span class="app_section_programs_slider_item_info_button modal_view">
+                <!--Section programs slide second row-->
+                <div class="app_section_programs_slider_item_row_2">
+                  <div class="app_section_programs_slider_item_info">
+                    <p>
+                      Дисциплина знакомит с современными подходами управления человеческими ресурсами.
+                    </p>
+                    <p>
+                      Вы изучите важность
+                      и практики управления человеческими ресурсами в достижении стратегических и оперативных задач
+                      организации, снизите текучку кадров и внедрите все инструменты эффективного взаимодействия HR c
+                      подразделениями компании.
+                    </p>
+                    <p>
+                      Рассмотрите примеры
+                      из практики работы отечественных и иностранных
+                      компаний.
+                    </p>
+                    <span class="app_section_programs_slider_item_info_button modal_view">
                     Поступить по акционной стоимости
                   </span>
-                </div>
-              </div>
-              <!--End section programs slid second row-->
-            </div>
-          </div>
-          <!--End section programs slide-->
-
-          <!--Section programs slide-->
-          <div class="app_section_programs_slider_item">
-            <div class="app_section_programs_slider_item_rows">
-              <!--Section programs slide first row-->
-              <div class="app_section_programs_slider_item_row_1">
-                <!--Slide white block content-->
-                <div class="app_section_programs_slider_item_block">
-                  <div class="app_section_programs_slider_item_block_row_1">
-                    <h2>Управление HR</h2>
-                    <p>Mini MBA, 6 месяцев, 520 ак. ч.</p>
-                  </div>
-                  <div class="app_section_programs_slider_item_block_row_2">
-                    <img src="img/programs/1.png" alt="">
                   </div>
                 </div>
-                <!--End slide white block content-->
+                <!--End section programs slid second row-->
               </div>
-              <!--End section programs slide first row-->
-
-              <!--Section programs slide second row-->
-              <div class="app_section_programs_slider_item_row_2">
-                <div class="app_section_programs_slider_item_info">
-                  <p>
-                    Дисциплина знакомит с современными подходами управления человеческими ресурсами.
-                  </p>
-                  <p>
-                    Вы изучите важность
-                    и практики управления человеческими ресурсами в достижении стратегических и оперативных задач
-                    организации, снизите текучку кадров и внедрите все инструменты эффективного взаимодействия HR c
-                    подразделениями компании.
-                  </p>
-                  <p>
-                    Рассмотрите примеры
-                    из практики работы отечественных и иностранных
-                    компаний.
-                  </p>
-                  <a href="#" class="app_section_programs_slider_item_info_button">
-                    Поступить по акционной стоимости
-                  </a>
-                </div>
-              </div>
-              <!--End section programs slide second row-->
-
             </div>
+            <!--End section programs slide-->
+
+            <!--Section programs slide-->
+            <div class="app_section_programs_slider_item">
+              <div class="app_section_programs_slider_item_rows">
+                <!--Section programs slide first row-->
+                <div class="app_section_programs_slider_item_row_1">
+                  <!--Slide white block content-->
+                  <div class="app_section_programs_slider_item_block">
+                    <div class="app_section_programs_slider_item_block_row_1">
+                      <h2>Управление проектами</h2>
+                      <p>Mini MBA, 6 месяцев, 520 ак. ч.</p>
+                    </div>
+                    <div class="app_section_programs_slider_item_block_row_2">
+                      <img src="img/programs/1.png" alt="">
+                    </div>
+                  </div>
+                  <!--End slide white block content-->
+                </div>
+                <!--End section programs slide first row-->
+
+                <!--Section programs slide second row-->
+                <div class="app_section_programs_slider_item_row_2">
+                  <div class="app_section_programs_slider_item_info">
+                    <p>
+                      Дисциплина «Управление проектами» позволяет получить системное мышление в области проектного
+                      управления,
+                      разработки и соблюдения планов проектов, эффективной реализации проектного подхода в
+                      управленческой деятельности,
+                      научить пользоваться практическим инструментарием, направленным на проектное управление,
+                      применять на практике специфические особенности менеджмента, характерные для данной области
+                      управления;
+                      ознакомить с основами проектного управления.
+                    </p>
+                    <a href="#" class="app_section_programs_slider_item_info_button">
+                      Поступить по акционной стоимости
+                    </a>
+                  </div>
+                </div>
+                <!--End section programs slide second row-->
+
+              </div>
+            </div>
+            <!--End section programs slide-->
+
+            <!--Section programs slide-->
+            <div class="app_section_programs_slider_item">
+              <div class="app_section_programs_slider_item_rows">
+                <!--Section programs slide first row-->
+                <div class="app_section_programs_slider_item_row_1">
+                  <!--Slide white block content-->
+                  <div class="app_section_programs_slider_item_block">
+                    <div class="app_section_programs_slider_item_block_row_1">
+                      <h2>Менеджмент организации</h2>
+                      <p>Mini MBA, 6 месяцев, 520 ак. ч.</p>
+                    </div>
+                    <div class="app_section_programs_slider_item_block_row_2">
+                      <img src="img/programs/1.png" alt="">
+                    </div>
+                  </div>
+                  <!--End slide white block content-->
+                </div>
+                <!--End section programs slide first row-->
+
+                <!--Section programs slide second row-->
+                <div class="app_section_programs_slider_item_row_2">
+                  <div class="app_section_programs_slider_item_info">
+                    <p>
+                      Дисциплина «Менеджмент организации» представляет общее видение управления операциями организации.
+                    </p>
+                    <p>
+                      Курс выстроен на базе управления всех связанных бизнес – процессов предприятия,
+                      Вы объедините все подразделения организации для достижения единой цели.
+                    </p>
+                    <p>
+                      Получите знания в области операционного менеджмента,
+                      которые ориентируют на повышение эффективности бизнес – процессов организации в целом.
+                    </p>
+                    <a href="#" class="app_section_programs_slider_item_info_button">
+                      Поступить по акционной стоимости
+                    </a>
+                  </div>
+                </div>
+                <!--End section programs slide second row-->
+
+              </div>
+            </div>
+            <!--End section programs slide-->
+
+            <!--Section programs slide-->
+            <div class="app_section_programs_slider_item">
+              <div class="app_section_programs_slider_item_rows">
+                <!--Section programs slide first row-->
+                <div class="app_section_programs_slider_item_row_1">
+                  <!--Slide white block content-->
+                  <div class="app_section_programs_slider_item_block">
+                    <div class="app_section_programs_slider_item_block_row_1">
+                      <h2>Управление продажами</h2>
+                      <p>Mini MBA, 6 месяцев, 520 ак. ч.</p>
+                    </div>
+                    <div class="app_section_programs_slider_item_block_row_2">
+                      <img src="img/programs/1.png" alt="">
+                    </div>
+                  </div>
+                  <!--End slide white block content-->
+                </div>
+                <!--End section programs slide first row-->
+
+                <!--Section programs slide second row-->
+                <div class="app_section_programs_slider_item_row_2">
+                  <div class="app_section_programs_slider_item_info">
+                    <p>
+                      Дисциплина «Управление продажами» формирует у слушателей теоретические знания и практические
+                      навыки принятия управленческих решений в области управления продажами.
+                    </p>
+                    <p>
+                      Курс знакомит с современными технологиями управления продажами,
+                      показывает важность автоматизации и цифровизации процессов продаж, разработкой и внедрением
+                      стратегии продаж, построения эффективных систем мотивации сотрудников.
+                    </p>
+                    <a href="#" class="app_section_programs_slider_item_info_button">
+                      Поступить по акционной стоимости
+                    </a>
+                  </div>
+                </div>
+                <!--End section programs slide second row-->
+
+              </div>
+            </div>
+            <!--End section programs slide-->
+
           </div>
-          <!--End section programs slide-->
+          <!--End section programs slider-->
 
         </div>
-        <!--End section programs slider-->
       </div>
     </div>
+
+    <!--Section programs list numbers-->
+    <div class="app_section_programs_list content_mw">
+      <ul>
+        <li data-slide="0">1</li>
+        <li data-slide="1">2</li>
+        <li data-slide="2">3</li>
+        <li data-slide="3">4</li>
+      </ul>
+    </div>
+    <!--End section programs list numbers-->
+
   </section>
   <!--End section programs-->
 
@@ -277,18 +393,7 @@
   <section class="app_section_courses" id="courses">
     <div class="app_section_courses_content_box content_mw">
       <div class="app_section_courses_content">
-        <!--Section courses list numbers-->
-        <div class="app_section_courses_list">
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-          </ul>
-        </div>
-        <!--End section courses list numbers-->
+
         <!--Section courses slider-->
         <div class="app_section_courses_slider_box">
           <h1>Программа курса</h1>
@@ -296,20 +401,182 @@
 
             <!--Section courses list slider navigation-->
             <div class="app_section_courses_slider_nav">
-              <div class="app_section_courses_slider_nav_item">1</div>
-              <div class="app_section_courses_slider_nav_item">2</div>
-              <div class="app_section_courses_slider_nav_item">3</div>
-              <div class="app_section_courses_slider_nav_item">4</div>
-              <div class="app_section_courses_slider_nav_item">5</div>
-              <div class="app_section_courses_slider_nav_item">6</div>
-              <div class="app_section_courses_slider_nav_item">7</div>
-              <div class="app_section_courses_slider_nav_item">8</div>
-              <div class="app_section_courses_slider_nav_item">9</div>
+              <div class="app_section_courses_slider_nav_item_box">
+                <div class="app_section_courses_slider_nav_item">1</div>
+              </div>
+              <div class="app_section_courses_slider_nav_item_box">
+                <div class="app_section_courses_slider_nav_item">2</div>
+              </div>
+              <div class="app_section_courses_slider_nav_item_box">
+                <div class="app_section_courses_slider_nav_item">3</div>
+              </div>
+              <div class="app_section_courses_slider_nav_item_box">
+                <div class="app_section_courses_slider_nav_item">4</div>
+              </div>
+              <div class="app_section_courses_slider_nav_item_box">
+                <div class="app_section_courses_slider_nav_item">5</div>
+              </div>
+              <div class="app_section_courses_slider_nav_item_box">
+                <div class="app_section_courses_slider_nav_item">6</div>
+              </div>
+              <div class="app_section_courses_slider_nav_item_box">
+                <div class="app_section_courses_slider_nav_item">7</div>
+              </div>
             </div>
             <!--End section courses list slider navigation-->
 
             <!--Section courses list slider slides-->
             <div class="app_section_courses_slider_for">
+
+              <!--Section courses slide-->
+              <div class="app_section_courses_slider_for_rows">
+
+                <!--Section courses list slider first row-->
+                <div class="app_section_courses_slider_for_row_1">
+                  <img src="img/course/mockup.png" alt="">
+                </div>
+                <!--End section courses list slider first row-->
+
+                <!--Section course list slider second row-->
+                <div class="app_section_courses_slider_for_row_2">
+                  <div class="app_section_courses_slider_for_row_2_content">
+                    <h2>Лидерство</h2>
+                    <div class="app_section_courses_slider_for_row_2_rows">
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_left">
+                        <article>
+                          С другой стороны сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+                          участие в формировании соответствующий условий активизации. Укрепление и развитие структуры
+                          требуют от нас анализа новых предложений.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_left_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End Section courses first row in the slide-->
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_right">
+                        <article>
+                          Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                          нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+                          активизации.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_right_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End section courses first row in the slide-->
+
+                    </div>
+                  </div>
+                  <span class="app_section_courses_for_slider_row_2_button modal_view">
+                    Поступить по акционной стоимости
+                  </span>
+                </div>
+                <!--End section courses list slider second row-->
+
+              </div>
+              <!--End section courses slide-->
+
+              <!--Section courses slide-->
+              <div class="app_section_courses_slider_for_rows">
+
+                <!--Section courses list slider first row-->
+                <div class="app_section_courses_slider_for_row_1">
+                  <img src="img/course/mockup.png" alt="">
+                </div>
+                <!--End section courses list slider first row-->
+
+                <!--Section course list slider second row-->
+                <div class="app_section_courses_slider_for_row_2">
+                  <div class="app_section_courses_slider_for_row_2_content">
+                    <h2>Менеджмент</h2>
+                    <div class="app_section_courses_slider_for_row_2_rows">
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_left">
+                        <article>
+                          С другой стороны сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+                          участие в формировании соответствующий условий активизации. Укрепление и развитие структуры
+                          требуют от нас анализа новых предложений.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_left_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End Section courses first row in the slide-->
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_right">
+                        <article>
+                          Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                          нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+                          активизации.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_right_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End section courses first row in the slide-->
+
+                    </div>
+                  </div>
+                  <span class="app_section_courses_for_slider_row_2_button modal_view">
+                    Поступить по акционной стоимости
+                  </span>
+                </div>
+                <!--End section courses list slider second row-->
+
+              </div>
+              <!--End section courses slide-->
+
+              <!--Section courses slide-->
               <div class="app_section_courses_slider_for_rows">
 
                 <!--Section courses list slider first row-->
@@ -381,12 +648,312 @@
                 <!--End section courses list slider second row-->
 
               </div>
+              <!--End section courses slide-->
+
+              <!--Section courses slide-->
+              <div class="app_section_courses_slider_for_rows">
+
+                <!--Section courses list slider first row-->
+                <div class="app_section_courses_slider_for_row_1">
+                  <img src="img/course/mockup.png" alt="">
+                </div>
+                <!--End section courses list slider first row-->
+
+                <!--Section course list slider second row-->
+                <div class="app_section_courses_slider_for_row_2">
+                  <div class="app_section_courses_slider_for_row_2_content">
+                    <h2>HR-менеджмент</h2>
+                    <div class="app_section_courses_slider_for_row_2_rows">
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_left">
+                        <article>
+                          С другой стороны сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+                          участие в формировании соответствующий условий активизации. Укрепление и развитие структуры
+                          требуют от нас анализа новых предложений.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_left_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End Section courses first row in the slide-->
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_right">
+                        <article>
+                          Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                          нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+                          активизации.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_right_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End section courses first row in the slide-->
+
+                    </div>
+                  </div>
+                  <span class="app_section_courses_for_slider_row_2_button modal_view">
+                    Поступить по акционной стоимости
+                  </span>
+                </div>
+                <!--End section courses list slider second row-->
+
+              </div>
+              <!--End section courses slide-->
+
+              <!--Section courses slide-->
+              <div class="app_section_courses_slider_for_rows">
+
+                <!--Section courses list slider first row-->
+                <div class="app_section_courses_slider_for_row_1">
+                  <img src="img/course/mockup.png" alt="">
+                </div>
+                <!--End section courses list slider first row-->
+
+                <!--Section course list slider second row-->
+                <div class="app_section_courses_slider_for_row_2">
+                  <div class="app_section_courses_slider_for_row_2_content">
+                    <h2>Маркетинг</h2>
+                    <div class="app_section_courses_slider_for_row_2_rows">
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_left">
+                        <article>
+                          С другой стороны сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+                          участие в формировании соответствующий условий активизации. Укрепление и развитие структуры
+                          требуют от нас анализа новых предложений.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_left_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End Section courses first row in the slide-->
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_right">
+                        <article>
+                          Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                          нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+                          активизации.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_right_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End section courses first row in the slide-->
+
+                    </div>
+                  </div>
+                  <span class="app_section_courses_for_slider_row_2_button modal_view">
+                    Поступить по акционной стоимости
+                  </span>
+                </div>
+                <!--End section courses list slider second row-->
+
+              </div>
+              <!--End section courses slide-->
+
+              <!--Section courses slide-->
+              <div class="app_section_courses_slider_for_rows">
+
+                <!--Section courses list slider first row-->
+                <div class="app_section_courses_slider_for_row_1">
+                  <img src="img/course/mockup.png" alt="">
+                </div>
+                <!--End section courses list slider first row-->
+
+                <!--Section course list slider second row-->
+                <div class="app_section_courses_slider_for_row_2">
+                  <div class="app_section_courses_slider_for_row_2_content">
+                    <h2>Продажи</h2>
+                    <div class="app_section_courses_slider_for_row_2_rows">
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_left">
+                        <article>
+                          С другой стороны сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+                          участие в формировании соответствующий условий активизации. Укрепление и развитие структуры
+                          требуют от нас анализа новых предложений.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_left_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End Section courses first row in the slide-->
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_right">
+                        <article>
+                          Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                          нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+                          активизации.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_right_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End section courses first row in the slide-->
+
+                    </div>
+                  </div>
+                  <span class="app_section_courses_for_slider_row_2_button modal_view">
+                    Поступить по акционной стоимости
+                  </span>
+                </div>
+                <!--End section courses list slider second row-->
+
+              </div>
+              <!--End section courses slide-->
+
+              <!--Section courses slide-->
+              <div class="app_section_courses_slider_for_rows">
+
+                <!--Section courses list slider first row-->
+                <div class="app_section_courses_slider_for_row_1">
+                  <img src="img/course/mockup.png" alt="">
+                </div>
+                <!--End section courses list slider first row-->
+
+                <!--Section course list slider second row-->
+                <div class="app_section_courses_slider_for_row_2">
+                  <div class="app_section_courses_slider_for_row_2_content">
+                    <h2>Доп. модуль на выбор</h2>
+                    <div class="app_section_courses_slider_for_row_2_rows">
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_left">
+                        <article>
+                          С другой стороны сложившаяся структура организации обеспечивает широкому кругу (специалистов)
+                          участие в формировании соответствующий условий активизации. Укрепление и развитие структуры
+                          требуют от нас анализа новых предложений.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_left_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End Section courses first row in the slide-->
+
+                      <!--Section courses first row in the slide-->
+                      <div class="app_section_courses_slider_for_row_2_right">
+                        <article>
+                          Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                          нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+                          активизации.
+                        </article>
+                        <div class="app_section_courses_slider_for_row_2_right_footer">
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                          <p>
+                          <span>
+                            <img src="img/course/accept.svg" alt="">
+                          </span>
+                            Пункт который включает в себя этот шаг
+                          </p>
+                        </div>
+                      </div>
+                      <!--End section courses first row in the slide-->
+
+                    </div>
+                  </div>
+                  <span class="app_section_courses_for_slider_row_2_button modal_view">
+                    Поступить по акционной стоимости
+                  </span>
+                </div>
+                <!--End section courses list slider second row-->
+
+              </div>
+              <!--End section courses slide-->
+
             </div>
             <!--End section courses list slider slides-->
+
 
           </div>
         </div>
         <!--End section courses slider-->
+
       </div>
     </div>
   </section>
@@ -398,92 +965,108 @@
       <div class="app_section_teachers_content">
         <h1>Преподаватели</h1>
         <!--Section teachers grid-->
-        <div class="app_section_teachers_grid">
+        <div class="app_section_teachers_grid row">
           <!--Section teachers grid item-->
-          <div class="app_section_teachers_item">
-            <div class="app_section_teachers_item_photo">
-              <img src="img/teachers/teacher_1.png" alt="">
-            </div>
-            <div class="app_section_teachers_item_name">
-              <h6>Атабаев Джамал Магомедович</h6>
-              <span>Кандидат экономических наук</span>
+          <div class="app_section_teachers_item_box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="app_section_teachers_item">
+              <div class="app_section_teachers_item_photo">
+                <img src="img/teachers/teacher_1.png" alt="">
+              </div>
+              <div class="app_section_teachers_item_name">
+                <h6>Атабаев Джамал Магомедович</h6>
+                <span>Кандидат экономических наук</span>
+              </div>
             </div>
           </div>
           <!--End section teachers grid item-->
           <!--Section teachers grid item-->
-          <div class="app_section_teachers_item">
-            <div class="app_section_teachers_item_photo">
-              <img src="img/teachers/teacher_2.png" alt="">
-            </div>
-            <div class="app_section_teachers_item_name">
-              <h6>Коцоева Вероника Александровна</h6>
-              <span>Кандидат экономических наук, доцент</span>
-            </div>
-          </div>
-          <!--End section teachers grid item-->
-          <!--Section teachers grid item-->
-          <div class="app_section_teachers_item">
-            <div class="app_section_teachers_item_photo">
-              <img src="img/teachers/teacher_3.png" alt="">
-            </div>
-            <div class="app_section_teachers_item_name">
-              <h6>Герлих Ольга Сергеевна</h6>
-              <span>Экономика</span>
+          <div class="app_section_teachers_item_box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="app_section_teachers_item">
+              <div class="app_section_teachers_item_photo">
+                <img src="img/teachers/teacher_2.png" alt="">
+              </div>
+              <div class="app_section_teachers_item_name">
+                <h6>Коцоева Вероника Александровна</h6>
+                <span>Кандидат экономических наук, доцент</span>
+              </div>
             </div>
           </div>
           <!--End section teachers grid item-->
           <!--Section teachers grid item-->
-          <div class="app_section_teachers_item">
-            <div class="app_section_teachers_item_photo">
-              <img src="img/teachers/teacher_4.png" alt="">
-            </div>
-            <div class="app_section_teachers_item_name">
-              <h6>Боресков Глеб Константинович</h6>
-              <span>должность</span>
-            </div>
-          </div>
-          <!--End section teachers grid item-->
-          <!--Section teachers grid item-->
-          <div class="app_section_teachers_item">
-            <div class="app_section_teachers_item_photo">
-              <img src="img/teachers/teacher_5.png" alt="">
-            </div>
-            <div class="app_section_teachers_item_name">
-              <h6>Гапоненко Александр Лукич</h6>
-              <span>д.э.н., профессор</span>
+          <div class="app_section_teachers_item_box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="app_section_teachers_item">
+              <div class="app_section_teachers_item_photo">
+                <img src="img/teachers/teacher_3.png" alt="">
+              </div>
+              <div class="app_section_teachers_item_name">
+                <h6>Герлих Ольга Сергеевна</h6>
+                <span>Экономика</span>
+              </div>
             </div>
           </div>
           <!--End section teachers grid item-->
           <!--Section teachers grid item-->
-          <div class="app_section_teachers_item">
-            <div class="app_section_teachers_item_photo">
-              <img src="img/teachers/teacher_6.png" alt="">
-            </div>
-            <div class="app_section_teachers_item_name">
-              <h6>Воробьёва Анна</h6>
-              <span>Кандидат педагогических наук</span>
-            </div>
-          </div>
-          <!--End section teachers grid item-->
-          <!--Section teachers grid item-->
-          <div class="app_section_teachers_item">
-            <div class="app_section_teachers_item_photo">
-              <img src="img/teachers/teacher_7.png" alt="">
-            </div>
-            <div class="app_section_teachers_item_name">
-              <h6>Вашакмадзе Теймураз Теймуразович</h6>
-              <span>Кандидат экономических наук</span>
+          <div class="app_section_teachers_item_box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="app_section_teachers_item">
+              <div class="app_section_teachers_item_photo">
+                <img src="img/teachers/teacher_4.png" alt="">
+              </div>
+              <div class="app_section_teachers_item_name">
+                <h6>Боресков Глеб Константинович</h6>
+                <span>должность</span>
+              </div>
             </div>
           </div>
           <!--End section teachers grid item-->
           <!--Section teachers grid item-->
-          <div class="app_section_teachers_item">
-            <div class="app_section_teachers_item_photo">
-              <img src="img/teachers/teacher_8.png" alt="">
+          <div class="app_section_teachers_item_box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="app_section_teachers_item">
+              <div class="app_section_teachers_item_photo">
+                <img src="img/teachers/teacher_5.png" alt="">
+              </div>
+              <div class="app_section_teachers_item_name">
+                <h6>Гапоненко Александр Лукич</h6>
+                <span>д.э.н., профессор</span>
+              </div>
             </div>
-            <div class="app_section_teachers_item_name">
-              <h6>Богатырева Татьяна Георгиевна</h6>
-              <span>Доктор наук</span>
+          </div>
+          <!--End section teachers grid item-->
+          <!--Section teachers grid item-->
+          <div class="app_section_teachers_item_box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="app_section_teachers_item">
+              <div class="app_section_teachers_item_photo">
+                <img src="img/teachers/teacher_6.png" alt="">
+              </div>
+              <div class="app_section_teachers_item_name">
+                <h6>Воробьёва Анна</h6>
+                <span>Кандидат педагогических наук</span>
+              </div>
+            </div>
+          </div>
+          <!--End section teachers grid item-->
+          <!--Section teachers grid item-->
+          <div class="app_section_teachers_item_box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="app_section_teachers_item">
+              <div class="app_section_teachers_item_photo">
+                <img src="img/teachers/teacher_7.png" alt="">
+              </div>
+              <div class="app_section_teachers_item_name">
+                <h6>Вашакмадзе Теймураз Теймуразович</h6>
+                <span>Кандидат экономических наук</span>
+              </div>
+            </div>
+          </div>
+          <!--End section teachers grid item-->
+          <!--Section teachers grid item-->
+          <div class="app_section_teachers_item_box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="app_section_teachers_item">
+              <div class="app_section_teachers_item_photo">
+                <img src="img/teachers/teacher_8.png" alt="">
+              </div>
+              <div class="app_section_teachers_item_name">
+                <h6>Богатырева Татьяна Георгиевна</h6>
+                <span>Доктор наук</span>
+              </div>
             </div>
           </div>
           <!--End section teachers grid item-->
@@ -530,22 +1113,6 @@
                   </div>
                 </div>
                 <div class="app_section_license_accordion_item_content" data-id="accordion_item_2">
-                  С другой стороны сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие
-                  в формировании соответствующий условий активизации. Укрепление и развитие структуры требуют от нас
-                  анализа.
-                </div>
-              </div>
-              <!--End section license accordion item-->
-              <!--Section license accordion item-->
-              <div class="app_section_license_accordion_item">
-                <div class="app_section_license_accordion_item_head" data-id="accordion_item_3">
-                  <div class="app_section_license_accordion_item_circle">3</div>
-                  <div class="app_section_license_accordion_item_title">Диплом о ПП</div>
-                  <div class="app_section_license_accordion_item_toggle">
-                    <img src="img/programs/arrow.png" alt="">
-                  </div>
-                </div>
-                <div class="app_section_license_accordion_item_content" data-id="accordion_item_3">
                   С другой стороны сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие
                   в формировании соответствующий условий активизации. Укрепление и развитие структуры требуют от нас
                   анализа.
@@ -678,7 +1245,7 @@
                 <input type="text" placeholder="Имя" class="buy_form_input_name">
                 <input type="text" placeholder="Телефон" class="buy_form_input_mobile">
                 <input type="email" placeholder="E-mail*" class="buy_form_input_email">
-                <input type="submit" value="Воспользоваться акционным предложением" class="buy_form_input_submit">
+                <input type="button" value="Воспользоваться акционным предложением" class="buy_form_input_submit">
                 <span>Я даю согласие на обработку персональных данных и соглашаюсь c пользовательским соглашением и политикой конфиденциальности</span>
               </form>
             </div>
@@ -700,14 +1267,16 @@
           <div class="app_section_footer_row_1">
             <div class="app_section_footer_row_1_head">
               <p>
-                ИНСТИТУТ БИЗНЕСА И ДЕЛОВОГО АДМИНИСТРИРОВАНИЯ РОССИЙСКОЙ АКАДЕМИИ НАРОДНОГО ХОЗЯЙСТВА И ГОСУДАРСТВЕННОЙ СЛУЖБЫ ПРИ ПРЕЗИДЕНТЕ РФ — © 2020
+                ИНСТИТУТ БИЗНЕСА И ДЕЛОВОГО АДМИНИСТРИРОВАНИЯ РОССИЙСКОЙ АКАДЕМИИ НАРОДНОГО ХОЗЯЙСТВА И ГОСУДАРСТВЕННОЙ
+                СЛУЖБЫ ПРИ ПРЕЗИДЕНТЕ РФ — © 2020
               </p>
             </div>
             <div class="app_section_footer_row_1_footer">
               <div class="app_section_footer_row_1_footer_rows">
                 <div class="app_section_footer_row_1_footer_left">
                   <p>
-                    Основной офис 119571 г. Москва, п-т. Вернадского 82. м. Юго-Западная. 5-й учебный корпус, 2-й этаж, офис 219
+                    Основной офис 119571 г. Москва, п-т. Вернадского 82. м. Юго-Западная. 5-й учебный корпус, 2-й этаж,
+                    офис 219
                   </p>
                   <a href="#"><span>На карте | Схема корпусов</span></a>
                   <a href="#"><span>Политика конфиденциальности</span></a>
@@ -734,7 +1303,7 @@
                     <a href="#"><img src="img/social/vk.svg" alt=""></a>
                     <a href="#"><img src="img/social/facebook.svg" alt=""></a>
                     <a href="#"><img src="img/social/youtube.svg" alt=""></a>
-                </div>
+                  </div>
                 </div>
               </div>
               <div class="app_section_footer_row_2_rows_right">
@@ -770,7 +1339,7 @@
           <input type="text" placeholder="Имя" class="buy_form_input_name">
           <input type="text" placeholder="Телефон" class="buy_form_input_mobile">
           <input type="email" placeholder="E-mail*" class="buy_form_input_email">
-          <input type="submit" value="Воспользоваться акционным предложением" class="buy_form_input_submit">
+          <input type="submit" value="Узнать о программе подробнее" class="buy_form_input_submit">
           <span>Я даю согласие на обработку персональных данных и соглашаюсь c пользовательским соглашением и политикой конфиденциальности</span>
         </form>
       </div>
